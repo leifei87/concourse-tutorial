@@ -10,9 +10,9 @@ run:
   args:
   - -exc
   - |
-    mkdir task-hello-world
+    mkdir hello-world
     touch testfile
-    mv testfile task-hello-world
+    mv testfile hello-world
 
 outputs:
-  - name: task-hello-world
+  - name: hello-world
