@@ -12,7 +12,6 @@ run:
   args:
   - -exc
   - |
-    mkdir testfolder
     touch testfile
     mv testfile testfolder
 
