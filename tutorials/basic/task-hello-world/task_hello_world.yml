@@ -6,7 +6,13 @@ image_resource:
   source: {repository: busybox}
 
 run:
-  path: echo
-  args: [hello world]
+  path: sh
+  args:
+  - -exc
+  - |
+    mkdir task-hello-world
+    touch testfile
+    mv testfile task-hello-world
+
 outputs:
   - name: task-hello-world
