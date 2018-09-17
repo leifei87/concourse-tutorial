@@ -5,6 +5,8 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+outputs:
+  - name: testfolder
 run:
   path: sh
   args:
@@ -14,5 +16,4 @@ run:
     touch testfile
     mv testfile testfolder
 
-outputs:
-  - name: testfolder
+
